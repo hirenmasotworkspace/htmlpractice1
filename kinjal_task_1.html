@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing Cards</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafa;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    p.subtitle {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .toggle {
+      margin-bottom: 30px;
+    }
+
+    .toggle button {
+      padding: 8px 20px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background-color: #fff;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+
+    .toggle .active {
+      background-color: #0d6efd;
+      color: #fff;
+      border-color: #0d6efd;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+      position: relative;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card .price {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+
+    .card ul li {
+      margin-bottom: 8px;
+    }
+
+    .card button {
+      background-color: #111;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .card .tag {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #0d6efd;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .card .note {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    a.view-link {
+      display: inline-block;
+      margin-top: 30px;
+      color: #0d6efd;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Clear and Fair Pricing for Everyone.</h1>
+  <p class="subtitle">Over 100,000 entrepreneurs have launched their businesses effortlessly with Payfast.</p>
+
+  <div class="toggle">
+    <button>Monthly</button>
+    <button class="active">Annual</button>
+  </div>
+
+  <div class="cards">
+    <!-- Basic Card -->
+    <div class="card">
+      <h3>Basic</h3>
+      <p class="price">$0</p>
+      <ul>
+        <li>1× Business account & Cards</li>
+        <li>1× Account</li>
+        <li>30 transfer or direct debit</li>
+      </ul>
+      <button>Current Plan</button>
+      <p class="note">30-day money-back guarantee</p>
+    </div>
+
+    <!-- Pro Card -->
+    <div class="card" style="border: 2px solid #0d6efd;">
+      <div class="tag">Most Popular</div>
+      <h3>Pro</h3>
+      <p class="price">$89 <span style="font-size:14px; text-decoration: line-through; color: gray;">$109</span></p>
+      <ul>
+        <li>3× Business account & Cards</li>
+        <li>Unlimited Accounts</li>
+        <li>500 transfer or direct debit</li>
+      </ul>
+      <button>Upgrade to Pro</button>
+      <p class="note">30-day money-back guarantee</p>
+    </div>
+
+    <!-- Enterprise Card -->
+    <div class="card">
+      <h3>Enterprise</h3>
+      <p class="price">$139</p>
+      <ul>
+        <li>3× Business account & Cards</li>
+        <li>Unlimited Accounts</li>
+        <li>Unlimited transfer or direct debit</li>
+      </ul>
+      <button>Upgrade to Premium</button>
+      <p class="note">30-day money-back guarantee</p>
+    </div>
+  </div>
+
+  <a class="view-link" href="#">View Pricing Page</a>
+
+</body>
+</html>
